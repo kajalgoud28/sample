@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(248, 47, 181);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-container {
+    size: 1cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.salon-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.salon-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.salon-subtitle {
+    font-size: 1.3em;
+    color: #f0f0f0;
+    margin: 5px 0 0;
+}
+
+/* Navigation Styling */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Center-aligns the navigation list */
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    gap: 15px; /* Adds space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.3em;
+    
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+/* Search and Login Styling */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+.main-nav ul li.active a {
+    text-decoration: underline;
+    font-weight: bold; /* Optional for better visibility */
+    color:white; /* Adjust color to match your design */
+}
+
+.search-form button {
+    padding: 8px 12px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.login-form a i {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login-form a:hover {
+    color: #333;
+}

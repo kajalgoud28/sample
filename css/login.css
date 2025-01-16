@@ -1,0 +1,130 @@
+/* CSS for the pink-themed login page */
+
+body {
+  background-color: #ffe6f2; /* Light pink background */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 320px; /* Adjusted to make the form shorter */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+}
+
+h2 {
+  text-align: center;
+  color: #ff66b2; /* Pink color for the title */
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container label {
+  color: #333;
+  font-weight: 500;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.role-select {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+/* Hide the Admin login option by default */
+.admin-btn {
+  display: none;
+}
+
+/* Optionally, show it based on specific condition, like a user role */
+.admin-btn.show {
+  display: inline;
+}
+
+
+.login-btn {
+  width: 100%;
+  background-color: #ff66b2; /* Pink background for the button */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.login-btn:hover {
+  background-color: #ff3399; /* Darker pink on hover */
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelbtn:hover {
+  background-color: #999;
+}
+
+.psw, .signup {
+  font-size: 12px;
+}
+
+.psw a, .signup a {
+  color: #ff66b2; /* Pink links */
+  text-decoration: none;
+}
+
+.psw a:hover, .signup a:hover {
+  text-decoration: underline;
+}

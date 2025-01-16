@@ -1,0 +1,117 @@
+/* CSS for the pink-themed signup page */
+
+body {
+    background-color: #ffe6f2; /* Light pink background */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 350px; /* Slightly wider for better spacing */
+    background-color: #fff;
+    padding: 25px 20px; /* More padding for better spacing */
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    animation: fadeIn 1s ease-in-out; /* Subtle fade-in animation */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Added bottom margin */
+    width: 60px; /* Slightly larger logo */
+    height: 60px;
+}
+
+h2 {
+    text-align: center;
+    color: #ff66b2; /* Pink color for the title */
+    margin-bottom: 25px; /* More spacing below the title */
+    font-weight: 600; /* Bolder title */
+}
+
+.input-container {
+    margin-bottom: 20px; /* Increased spacing between fields */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #ff66b2; /* Pink border on focus */
+    outline: none;
+}
+
+.register-btn {
+    width: 100%;
+    background-color: #ff66b2; /* Pink background for the button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+    background-color: #e0559c; /* Darker pink on hover */
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Spacing above options */
+}
+
+.cancelbtn {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cancelbtn:hover {
+    background-color: #ccc;
+}
+
+.login a {
+    color: #ff66b2; /* Pink link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.login a:hover {
+    color: #e0559c; /* Darker pink on hover */
+}

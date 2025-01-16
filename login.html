@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <form action="./php/login.php" method="post" class="login-form">
+            <div class="imgcontainer">
+                <img src="image/logo.png" alt="Logo" class="logo">
+            </div>
+            <h2>Login</h2>
+            <div class="input-container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+            <div class="input-container">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+
+            <!-- Radio buttons to select Admin or User -->
+            <div class="input-container role-select">
+                <label><b>Login as:</b></label><br>
+                <input type="radio" id="user" name="role" value="user" checked>
+                <label for="user">User</label>
+                <input type="radio" id="admin" name="role" value="admin" class="admin-btn">
+                <label for="admin">Admin</label>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+            <label class="remember-me">
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+
+            <div class="options-container">
+                <button type="button" class="cancelbtn"><a href="index.php">Cancel</a></button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                <span class="signup">Don't have an account? <a href="signup.html">Sign up here</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

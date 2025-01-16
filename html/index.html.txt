@@ -1,0 +1,493 @@
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Elegance</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Salon Elegance logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li><a href="php/products.php">Product</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <form action="search.php" method="GET" class="search-form">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="login-form">
+                <a href="login.html">Login</a>
+                <a href="signup.php">Signup</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="image/hero.png" alt="Salon Elegance Hero Image" class="hero-image">
+        <img src="image/blink1.png" alt="hair image" class="blink-image">
+        <img src="image/girl.jpg" alt="girl image" class="girl-image">
+        <h1>Welcome to Salon Elegance</h1>
+        <p>Your beauty, our duty.</p>
+        <button onclick="bookAppointment()">Book an Appointment</button>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="image/service1.png" alt="Haircut Service" class="service1">
+            <div>
+                <h3>Haircut</h3>
+                <p>Professional haircuts tailored to your style.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="image/service2.jpg" alt="Coloring Service" class="service2">
+            <div>
+                <h3>Coloring</h3>
+                <p>Expert coloring services for a vibrant look.</p>
+            </div>
+        </div>
+        <div class="service">
+            <img src="image/service3.jpg" alt="Styling Service" class="service3">
+            <div>
+                <h3>Styling</h3>
+                <p>Get the perfect style for any occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Salon Elegance has been providing top-notch hair services since 2000. Our team of professionals are dedicated to making you look and feel your best.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salon Elegance. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+#########################3
+services.css:
+/* services.css */
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 250px;
+}
+
+#services h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.service img {
+    width: 300px;
+    height: auto;
+}
+
+.service div {
+    padding: 20px;
+    max-width: 400px;
+}
+
+.service:nth-child(even) {
+    flex-direction: row;
+}
+
+.service:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+#######################
+header.css:
+/* header.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-img {
+    width: 130px;
+    height: auto;
+}
+
+header {
+    background-color: rgb(248, 47, 181);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login-form a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+#############3
+style.css:
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../image/bgimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-image, .blink-image, .girl-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateImages {
+    0%, 33.33%, 100% {
+        opacity: 0;
+    }
+    16.66%, 50% {
+        opacity: 1;
+    }
+}
+
+.hero-image {
+    animation-name: rotateImages;
+    animation-delay: 0s;
+}
+
+.blink-image {
+    animation-name: rotateImages;
+    animation-delay: 4s;
+}
+
+.girl-image {
+    animation-name: rotateImages;
+    animation-delay: 8s;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero button {
+    background-color: #ffa061;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+####################
+login.css:
+/* login.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.logo {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+##################
+login.css:
+/* login.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.logo {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+######################
+login.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+            <img src="image/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</body>
+</html>
