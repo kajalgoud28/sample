@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Serve static files (CSS and images) from the 'css' and 'images' directories
 app.use('/css', express.static(path.join(__dirname, 'css')));
-app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/images', express.static(path.join(__dirname, 'image')));
 
 // Serve the index.php file
 app.get('/', (req, res) => {
